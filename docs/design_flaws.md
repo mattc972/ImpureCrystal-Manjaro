@@ -16,48 +16,6 @@ These are parts of the code that do not work *incorrectly*, like [bugs and glitc
 - [`GetForestTreeFrame` works, but it's still bad](#getforesttreeframe-works-but-its-still-bad)
 - [The overworld scripting engine assumes no more than 127 banks](#the-overworld-scripting-engine-assumes-no-more-than-127-banks)
 
-
-## Pic banks are offset by `PICS_FIX`
-
-[data/pokemon/pic_pointers.asm](https://github.com/pret/pokecrystal/blob/master/data/pokemon/pic_pointers.asm), [data/pokemon/unown_pic_pointers.asm](https://github.com/pret/pokecrystal/blob/master/data/pokemon/unown_pic_pointers.asm), and [data/trainers/pic_pointers.asm](https://github.com/pret/pokecrystal/blob/master/data/trainers/pic_pointers.asm) all have to use `dba_pic` instead of `dba`. This is a macro in [macros/data.asm](https://github.com/pret/pokecrystal/blob/master/macros/data.asm) that offsets banks by `PICS_FIX`:
-
-```asm
-MACRO dba_pic ; dbw bank, address
-	db BANK(\1) - PICS_FIX
-	dw \1
-ENDM
-```
-
-The offset is translated into a correct bank by `FixPicBank` in [engine/gfx/load_pics.asm](https://github.com/pret/pokecrystal/blob/master/engine/gfx/load_pics.asm):
-
-```asm
-FixPicBank:
-; This is a thing for some reason.
-
-DEF PICS_FIX EQU $36
-GLOBAL PICS_FIX
-
-	push hl
-	push bc
-	sub BANK("Pics 1") - PICS_FIX
-	ld c, a
-	ld b, 0
-	ld hl, .PicsBanks
-	add hl, bc
-	ld a, [hl]
-	pop bc
-	pop hl
-	ret
-
-.PicsBanks:
-	db BANK("Pics 1")  ; BANK("Pics 1") + 0
-	...
-	db BANK("Pics 24") ; BANK("Pics 1") + 23
-```
-
-**Fix:** Delete `FixPicBank` and remove all four calls to `FixPicBank` in [engine/gfx/load_pics.asm](https://github.com/pret/pokecrystal/blob/master/engine/gfx/load_pics.asm). Then use `dba` instead of `dba_pic` everywhere.
-
-
 ## `PokemonPicPointers` and `UnownPicPointers` are assumed to start at the same address
 
 `GetFrontpicPointer` and `GetMonBackpic` in [engine/gfx/load_pics.asm](https://github.com/pret/pokecrystal/blob/master/engine/gfx/load_pics.asm) make this assumption, which has to be accounted for in the data files.

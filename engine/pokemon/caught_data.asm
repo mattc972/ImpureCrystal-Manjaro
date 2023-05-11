@@ -167,10 +167,13 @@ SetCaughtData:
 	call GetPartyLocation
 SetBoxmonOrEggmonCaughtData:
 	ld a, [wTimeOfDay]
-	inc a
-	rrca
-	rrca
-	ld b, a
+	cp NITE_F
+	jr nz, .day
+	ld b, 128
+	jr .addLevel
+.day:
+	ld b, 0
+.addLevel:
 	ld a, [wCurPartyLevel]
 	or b
 	ld [hli], a

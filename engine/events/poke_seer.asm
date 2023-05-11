@@ -181,11 +181,8 @@ GetCaughtLevel:
 GetCaughtTime:
 	ld a, [wSeerCaughtData]
 	and CAUGHT_TIME_MASK
-	jr z, .none
 
 	rlca
-	rlca
-	dec a
 	ld hl, .times
 	call GetNthString
 	ld d, h
@@ -195,29 +192,13 @@ GetCaughtTime:
 	and a
 	ret
 
-.none
-	ld de, wSeerTimeOfDay
-	call UnknownCaughtData
-	ret
-
 .times
-	db "Morning@"
 	db "Day@"
 	db "Night@"
-
-UnknownCaughtData:
-	ld hl, .unknown
-	ld bc, NAME_LENGTH
-	call CopyBytes
-	ret
-
-.unknown
-	db "Unknown@"
 
 GetCaughtLocation:
 	ld a, [wSeerCaughtGender]
 	and CAUGHT_LOCATION_MASK
-	jr z, .Unknown
 	cp LANDMARK_EVENT
 	jr z, .event
 	cp LANDMARK_GIFT
@@ -230,10 +211,6 @@ GetCaughtLocation:
 	call CopyBytes
 	and a
 	ret
-
-.Unknown:
-	ld de, wSeerCaughtLocation
-	jp UnknownCaughtData
 
 .event
 	ld a, SEERACTION_LEVEL_ONLY

@@ -69,8 +69,8 @@ INCLUDE "data/battle/ai/status_only_effects.asm"
 AI_Setup:
 ; Use stat-modifying moves on turn 1.
 
-; 50% chance to greatly encourage stat-up moves during the first turn of enemy's Pokemon.
-; 50% chance to greatly encourage stat-down moves during the first turn of player's Pokemon.
+; 50% chance to greatly encourage stat-up moves during the first turn of enemy's Pokémon.
+; 50% chance to greatly encourage stat-down moves during the first turn of player's Pokémon.
 ; Almost 90% chance to greatly discourage stat-modifying moves otherwise.
 
 	ld hl, wEnemyAIMoveScores - 1
@@ -193,6 +193,7 @@ AI_Types:
 	push de
 	push bc
 	ld a, [wEnemyMoveStruct + MOVE_TYPE]
+	and TYPE_MASK
 	ld d, a
 	ld hl, wEnemyMonMoves
 	ld b, NUM_MOVES + 1
@@ -207,6 +208,7 @@ AI_Types:
 
 	call AIGetEnemyMove
 	ld a, [wEnemyMoveStruct + MOVE_TYPE]
+	and TYPE_MASK
 	cp d
 	jr z, .checkmove2
 	ld a, [wEnemyMoveStruct + MOVE_POWER]
@@ -549,13 +551,13 @@ AI_Smart_LockOn:
 AI_Smart_Selfdestruct:
 ; Selfdestruct, Explosion
 
-; Unless this is the enemy's last Pokemon...
+; Unless this is the enemy's last Pokémon...
 	push hl
 	farcall FindAliveEnemyMons
 	pop hl
 	jr nc, .notlastmon
 
-; ...greatly discourage this move unless this is the player's last Pokemon too.
+; ...greatly discourage this move unless this is the player's last Pokémon too.
 	push hl
 	call AICheckLastPlayerMon
 	pop hl
@@ -1014,7 +1016,7 @@ AI_Smart_TrapTarget:
 	and 1 << SUBSTATUS_IN_LOVE | 1 << SUBSTATUS_ROLLOUT | 1 << SUBSTATUS_IDENTIFIED | 1 << SUBSTATUS_NIGHTMARE
 	jr nz, .encourage
 
-; Else, 50% chance to greatly encourage this move if it's the player's Pokemon first turn.
+; Else, 50% chance to greatly encourage this move if it's the player's Pokémon first turn.
 	ld a, [wPlayerTurnsTaken]
 	and a
 	jr z, .encourage
@@ -1115,15 +1117,31 @@ AI_Smart_SpDefenseUp2:
 	jr nc, .discourage
 
 ; 80% chance to greatly encourage this move if
-; enemy's Special Defense level is lower than +2, and the player is of a special type.
+; enemy's Special Defense level is lower than +2,
+; and the player's Pokémon is Special-oriented.
 	cp BASE_STAT_LEVEL + 2
 	ret nc
 
-	ld a, [wBattleMonType1]
-	cp SPECIAL
-	jr nc, .encourage
-	ld a, [wBattleMonType2]
-	cp SPECIAL
+	push hl
+; Get the pointer for the player's Pokémon's base Attack
+	ld a, [wBattleMonSpecies]
+	ld hl, BaseData + BASE_ATK
+	ld bc, BASE_DATA_SIZE
+	call AddNTimes
+; Get the Pokémon's base Attack
+	ld a, BANK(BaseData)
+	call GetFarByte
+	ld d, a
+; Get the pointer for the player's Pokémon's base Special Attack
+	ld bc, BASE_SAT - BASE_ATK
+	add hl, bc
+; Get the Pokémon's base Special Attack
+	ld a, BANK(BaseData)
+	call GetFarByte
+	pop hl
+; If its base Attack is greater than its base Special Attack,
+; don't encourage this move.
+	cp d
 	ret c
 
 .encourage
@@ -1191,7 +1209,7 @@ AI_Smart_SpeedDownHit:
 
 ; Almost 90% chance to greatly encourage this move if the following conditions all meet:
 ; Enemy's HP is higher than 25%.
-; It's the first turn of player's Pokemon.
+; It's the first turn of player's Pokémon.
 ; Player is faster than enemy.
 
 	ld a, [wEnemyMoveStruct + MOVE_ANIM]
@@ -1409,6 +1427,7 @@ AI_Smart_Encore:
 
 	push hl
 	ld a, [wEnemyMoveStruct + MOVE_TYPE]
+	and TYPE_MASK
 	ld hl, wEnemyMonType1
 	predef CheckTypeMatchup
 
@@ -1569,7 +1588,7 @@ AI_Smart_SkullBash:
 	ret
 
 AI_Smart_HealBell:
-; Dismiss this move if none of the opponent's Pokemon is statused.
+; Dismiss this move if none of the opponent's Pokémon is statused.
 ; Encourage this move if the enemy is statused.
 ; 50% chance to greatly encourage this move if the enemy is fast asleep or frozen.
 
@@ -1842,11 +1861,6 @@ AI_Smart_Curse:
 	ld a, [wBattleMonType1]
 	cp GHOST
 	jr z, .greatly_encourage
-	cp SPECIAL
-	ret nc
-	ld a, [wBattleMonType2]
-	cp SPECIAL
-	ret nc
 	call AI_80_20
 	ret c
 	dec [hl]
@@ -2192,7 +2206,7 @@ AI_Smart_Rollout:
 
 AI_Smart_Swagger:
 AI_Smart_Attract:
-; 80% chance to encourage this move during the first turn of player's Pokemon.
+; 80% chance to encourage this move during the first turn of player's Pokémon.
 ; 80% chance to discourage this move otherwise.
 
 	ld a, [wPlayerTurnsTaken]
@@ -2419,12 +2433,12 @@ AIGoodWeatherType:
 	ret nc
 
 ; ...as long as one of the following conditions meet:
-; It's the first turn of the player's Pokemon.
+; It's the first turn of the player's Pokémon.
 	ld a, [wPlayerTurnsTaken]
 	and a
 	jr z, .good
 
-; Or it's the first turn of the enemy's Pokemon.
+; Or it's the first turn of the enemy's Pokémon.
 	ld a, [wEnemyTurnsTaken]
 	and a
 	ret nz

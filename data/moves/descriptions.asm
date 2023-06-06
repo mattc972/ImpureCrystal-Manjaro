@@ -324,8 +324,8 @@ SwordsDanceDescription:
 	next "creases ATTACK.@"
 
 CutDescription:
-	db   "Cuts using claws,"
-	next "scythes, etc.@"
+	db   "An attack that ups"
+	next "the user's ATTACK.@"
 
 GustDescription:
 	db   "Whips up a strong"

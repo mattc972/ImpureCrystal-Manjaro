@@ -15,12 +15,10 @@
 	const BUG
 	const GHOST
 	const STEEL
-
 DEF UNUSED_TYPES EQU const_value
 	const_next 19
 	const CURSE_TYPE
 DEF UNUSED_TYPES_END EQU const_value
-
 	const FIRE
 	const WATER
 	const GRASS
@@ -29,6 +27,7 @@ DEF UNUSED_TYPES_END EQU const_value
 	const ICE
 	const DRAGON
 	const DARK
+	const FAIRY
 DEF TYPES_END EQU const_value
 
 DEF TYPE_MASK EQU %00111111

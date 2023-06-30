@@ -253,8 +253,8 @@ BattleAnimations::
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_XScissor
+	dw BattleAnim_DarkPulse
 	assert_table_length NUM_ATTACKS + 1
-	dw BattleAnim_252
 	dw BattleAnim_253
 	dw BattleAnim_254
 	dw BattleAnim_SweetScent2
@@ -285,7 +285,6 @@ BattleAnimations::
 	assert_table_length NUM_BATTLE_ANIMS + 1
 
 BattleAnim_0:
-BattleAnim_252:
 BattleAnim_253:
 BattleAnim_254:
 BattleAnim_MirrorMove:
@@ -4588,6 +4587,39 @@ BattleAnim_XScissor:
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $10
 	anim_wait 24
 	anim_bgp $e4
+	anim_ret
+
+BattleAnim_DarkPulse:
+	anim_1gfx ANIM_GFX_CHARGE
+	anim_bgp $1b
+	anim_call BattleAnim_TargetObj_1Row
+	anim_obj ANIM_OBJ_HIDDEN_POWER, 44, 88, $0
+	anim_obj ANIM_OBJ_HIDDEN_POWER, 44, 88, $8
+	anim_obj ANIM_OBJ_HIDDEN_POWER, 44, 88, $10
+	anim_obj ANIM_OBJ_HIDDEN_POWER, 44, 88, $18
+	anim_obj ANIM_OBJ_HIDDEN_POWER, 44, 88, $20
+	anim_obj ANIM_OBJ_HIDDEN_POWER, 44, 88, $28
+	anim_obj ANIM_OBJ_HIDDEN_POWER, 44, 88, $30
+	anim_obj ANIM_OBJ_HIDDEN_POWER, 44, 88, $38
+.loop
+	anim_sound 0, 0, SFX_SWORDS_DANCE
+	anim_wait 8
+	anim_loop 12, .loop
+	anim_incbgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING
+	anim_call BattleAnim_ShowMon_0
+	anim_wait 1
+	anim_incobj 2
+	anim_incobj 3
+	anim_incobj 4
+	anim_incobj 5
+	anim_incobj 6
+	anim_incobj 7
+	anim_incobj 8
+	anim_incobj 9
+	anim_wait 16
+	anim_1gfx ANIM_GFX_HIT
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 56, $0
+	anim_wait 32
 	anim_ret
 
 BattleAnimSub_Drain:

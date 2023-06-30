@@ -250,5 +250,5 @@ MoveNames::
 	li "Future Sight"
 	li "Rock Smash"
 	li "Whirlpool"
-	li "Beat Up"
+	li "X-Scissor"
 	assert_list_length NUM_ATTACKS

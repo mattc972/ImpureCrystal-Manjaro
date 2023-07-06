@@ -266,4 +266,6 @@ Moves:
 	move WHIRLPOOL,    EFFECT_TRAP_TARGET,        15, WATER,         SPECIAL,   70, 15,   0
 	move X_SCISSOR,    EFFECT_NORMAL_HIT,         80, BUG,           PHYSICAL, 100, 15,   0
 	move DARK_PULSE,   EFFECT_FLINCH_HIT,	      80, DARK,          SPECIAL,  100, 15,  20
+	move IRON_HEAD,    EFFECT_FLINCH_HIT,	      80, STEEL, 	 PHYSICAL, 100, 15,  30
+	; 
 	assert_table_length NUM_ATTACKS

@@ -258,6 +258,7 @@
 	const WHIRLPOOL    ; fa
 	const X_SCISSOR    ; fb
 	const DARK_PULSE   ; fc
+	const IRON_HEAD    ; fd
 DEF NUM_ATTACKS EQU const_value - 1
 
 ; Battle animations use the same constants as the moves up to this point

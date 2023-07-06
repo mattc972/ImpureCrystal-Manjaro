@@ -253,8 +253,8 @@ MoveDescriptions::
 	dw WhirlpoolDescription
 	dw XScissorDescription
 	dw DarkPulseDescription
+	dw IronHeadDescription
 	assert_table_length NUM_ATTACKS
-	dw MoveFDDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
@@ -1271,5 +1271,9 @@ XScissorDescription:
 	next "like scissors.@"
 
 DarkPulseDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
+
+IronHeadDescription:
 	db   "An attack that may"
 	next "cause flinching.@"

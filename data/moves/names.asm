@@ -252,4 +252,5 @@ MoveNames::
 	li "Whirlpool"
 	li "X-Scissor"
 	li "Dark Pulse"
+	li "Iron Head"
 	assert_list_length NUM_ATTACKS

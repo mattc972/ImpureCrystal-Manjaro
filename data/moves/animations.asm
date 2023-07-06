@@ -255,8 +255,8 @@ BattleAnimations::
 	dw BattleAnim_XScissor
 	dw BattleAnim_DarkPulse
 	dw BattleAnim_IronHead
+	dw BattleAnim_FlashCannon
 	assert_table_length NUM_ATTACKS + 1
-	dw BattleAnim_254
 	dw BattleAnim_SweetScent2
 	assert_table_length $100
 ; $100
@@ -285,7 +285,6 @@ BattleAnimations::
 	assert_table_length NUM_BATTLE_ANIMS + 1
 
 BattleAnim_0:
-BattleAnim_254:
 BattleAnim_MirrorMove:
 	anim_ret
 
@@ -4638,6 +4637,21 @@ BattleAnim_IronHead:
 	anim_obj ANIM_OBJ_HIT_YFIX, 136, 56, $0
 	anim_wait 8
 	anim_call BattleAnim_ShowMon_0
+	anim_ret
+
+BattleAnim_FlashCannon:
+	anim_1gfx ANIM_GFX_REFLECT
+	anim_obp0 $0
+	anim_sound 0, 0, SFX_RAGE
+	anim_call BattleAnim_TargetObj_1Row
+	anim_call BattleAnimSub_Metallic
+	anim_call BattleAnim_ShowMon_0
+	anim_1gfx ANIM_GFX_BEAM
+	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $30, $4, $10
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $40
+	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_call BattleAnimSub_Beam
+	anim_wait 48
 	anim_ret
 
 BattleAnimSub_Drain:

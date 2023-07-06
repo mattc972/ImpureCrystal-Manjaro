@@ -253,4 +253,5 @@ MoveNames::
 	li "X-Scissor"
 	li "Dark Pulse"
 	li "Iron Head"
+	li "Flash Cannon"
 	assert_list_length NUM_ATTACKS

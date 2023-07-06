@@ -267,5 +267,5 @@ Moves:
 	move X_SCISSOR,    EFFECT_NORMAL_HIT,         80, BUG,           PHYSICAL, 100, 15,   0
 	move DARK_PULSE,   EFFECT_FLINCH_HIT,	      80, DARK,          SPECIAL,  100, 15,  20
 	move IRON_HEAD,    EFFECT_FLINCH_HIT,	      80, STEEL, 	 PHYSICAL, 100, 15,  30
-	; 
+	move FLASH_CANNON, EFFECT_SP_DEF_DOWN_HIT,    80, STEEL, 	 SPECIAL,  100, 10,  10 
 	assert_table_length NUM_ATTACKS

@@ -254,8 +254,8 @@ MoveDescriptions::
 	dw XScissorDescription
 	dw DarkPulseDescription
 	dw IronHeadDescription
+	dw FlashCannonDescription
 	assert_table_length NUM_ATTACKS
-	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 	assert_table_length $100
@@ -1277,3 +1277,7 @@ DarkPulseDescription:
 IronHeadDescription:
 	db   "An attack that may"
 	next "cause flinching.@"
+
+FlashCannonDescription:
+	db   "An attack that may"
+	next "lower SPCL.DEF.@"

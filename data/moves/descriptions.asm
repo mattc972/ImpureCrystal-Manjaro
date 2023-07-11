@@ -4,7 +4,7 @@ MoveDescriptions::
 	dw PoundDescription
 	dw KarateChopDescription
 	dw DoubleslapDescription
-	dw CometPunchDescription
+	dw ArmThrustDescription
 	dw MegaPunchDescription
 	dw PayDayDescription
 	dw FirePunchDescription
@@ -278,9 +278,9 @@ DoubleslapDescription:
 	db   "Repeatedly slaps"
 	next "2-5 times.@"
 
-CometPunchDescription:
-	db   "Repeatedly punches"
-	next "2-5 times.@"
+ArmThrustDescription:
+	db   "Repeatedly thrusts"
+	next "arms 2-5 times.@"
 
 MegaPunchDescription:
 	db   "A powerful punch"

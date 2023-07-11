@@ -3,7 +3,7 @@ MoveNames::
 	li "Pound"
 	li "Karate Chop"
 	li "Doubleslap"
-	li "Comet Punch"
+	li "Arm Thrust"
 	li "Mega Punch"
 	li "Pay Day"
 	li "Fire Punch"

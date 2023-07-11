@@ -5,7 +5,7 @@ BattleAnimations::
 	dw BattleAnim_Pound
 	dw BattleAnim_KarateChop
 	dw BattleAnim_Doubleslap
-	dw BattleAnim_CometPunch
+	dw BattleAnim_ArmThrust
 	dw BattleAnim_MegaPunch
 	dw BattleAnim_PayDay
 	dw BattleAnim_FirePunch
@@ -696,7 +696,7 @@ BattleAnim_Doubleslap:
 	anim_wait 8
 	anim_ret
 
-BattleAnim_CometPunch:
+BattleAnim_ArmThrust:
 	anim_1gfx ANIM_GFX_HIT
 	anim_if_param_equal $1, .alternate
 	anim_sound 0, 1, SFX_COMET_PUNCH

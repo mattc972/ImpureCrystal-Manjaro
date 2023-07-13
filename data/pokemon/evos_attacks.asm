@@ -317,7 +317,7 @@ FearowEvosAttacks:
 EkansEvosAttacks:
 	db EVOLVE_LEVEL, 22, ARBOK
 	db 0 ; no more evolutions
-	db 1, WRAP
+	db 1, BIND
 	db 1, LEER
 	db 9, POISON_STING
 	db 15, BITE
@@ -329,7 +329,7 @@ EkansEvosAttacks:
 
 ArbokEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WRAP
+	db 1, BIND
 	db 1, LEER
 	db 1, POISON_STING
 	db 1, BITE
@@ -913,7 +913,7 @@ BellsproutEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, VINE_WHIP
 	db 6, GROWTH
-	db 11, WRAP
+	db 11, BIND
 	db 15, SLEEP_POWDER
 	db 17, POISONPOWDER
 	db 19, STUN_SPORE
@@ -928,9 +928,9 @@ WeepinbellEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, VINE_WHIP
 	db 1, GROWTH
-	db 1, WRAP
+	db 1, BIND
 	db 6, GROWTH
-	db 11, WRAP
+	db 11, BIND
 	db 15, SLEEP_POWDER
 	db 17, POISONPOWDER
 	db 19, STUN_SPORE
@@ -956,7 +956,7 @@ TentacoolEvosAttacks:
 	db 12, CONSTRICT
 	db 19, ACID
 	db 25, BUBBLEBEAM
-	db 30, WRAP
+	db 30, BIND
 	db 36, BARRIER
 	db 43, SCREECH
 	db 49, HYDRO_PUMP
@@ -971,7 +971,7 @@ TentacruelEvosAttacks:
 	db 12, CONSTRICT
 	db 19, ACID
 	db 25, BUBBLEBEAM
-	db 30, WRAP
+	db 30, BIND
 	db 38, BARRIER
 	db 47, SCREECH
 	db 55, HYDRO_PUMP
@@ -1467,7 +1467,7 @@ LickitungEvosAttacks:
 	db 7, SUPERSONIC
 	db 13, DEFENSE_CURL
 	db 19, STOMP
-	db 25, WRAP
+	db 25, BIND
 	db 31, DISABLE
 	db 37, SLAM
 	db 43, SCREECH
@@ -1984,7 +1984,7 @@ MoltresEvosAttacks:
 DratiniEvosAttacks:
 	db EVOLVE_LEVEL, 30, DRAGONAIR
 	db 0 ; no more evolutions
-	db 1, WRAP
+	db 1, BIND
 	db 1, LEER
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
@@ -1999,7 +1999,7 @@ DratiniEvosAttacks:
 DragonairEvosAttacks:
 	db EVOLVE_LEVEL, 55, DRAGONITE
 	db 0 ; no more evolutions
-	db 1, WRAP
+	db 1, BIND
 	db 1, LEER
 	db 1, THUNDER_WAVE
 	db 1, TWISTER
@@ -2015,7 +2015,7 @@ DragonairEvosAttacks:
 
 DragoniteEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WRAP
+	db 1, BIND
 	db 1, LEER
 	db 1, THUNDER_WAVE
 	db 1, TWISTER
@@ -2852,7 +2852,7 @@ ShuckleEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONSTRICT
 	db 1, WITHDRAW
-	db 9, WRAP
+	db 9, BIND
 	db 14, ENCORE
 	db 23, SAFEGUARD
 	db 28, BIDE

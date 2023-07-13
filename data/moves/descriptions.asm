@@ -35,7 +35,7 @@ MoveDescriptions::
 	dw HornDrillDescription
 	dw TackleDescription
 	dw BodySlamDescription
-	dw WrapDescription
+	dw ShadowClawDescription
 	dw TakeDownDescription
 	dw ThrashDescription
 	dw DoubleEdgeDescription
@@ -402,9 +402,9 @@ BodySlamDescription:
 	db   "An attack that may"
 	next "cause paralysis.@"
 
-WrapDescription:
-	db   "Squeezes the foe"
-	next "for 2-5 turns.@"
+ShadowClawDescription:
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
 
 TakeDownDescription:
 	db   "A tackle that also"

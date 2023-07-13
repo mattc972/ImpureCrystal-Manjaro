@@ -40,7 +40,7 @@
 	const HORN_DRILL   ; 20
 	const TACKLE       ; 21
 	const BODY_SLAM    ; 22
-	const WRAP         ; 23
+	const SHADOW_CLAW  ; 23
 	const TAKE_DOWN    ; 24
 	const THRASH       ; 25
 	const DOUBLE_EDGE  ; 26

@@ -34,7 +34,7 @@ MoveNames::
 	li "Horn Drill"
 	li "Tackle"
 	li "Body Slam"
-	li "Wrap"
+	li "Shadow Claw"
 	li "Take Down"
 	li "Thrash"
 	li "Double-Edge"

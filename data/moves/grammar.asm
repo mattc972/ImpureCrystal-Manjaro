@@ -64,7 +64,6 @@ MoveGrammar:
 	db BIND
 	db SLAM
 	db HORN_ATTACK
-	db WRAP
 	db THRASH
 	db TAIL_WHIP
 	db LEER

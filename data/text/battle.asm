@@ -460,12 +460,6 @@ FireSpinTrapText:
 	line "was trapped!"
 	prompt
 
-WrappedByText:
-	text "<TARGET>"
-	line "was WRAPPED by"
-	cont "<USER>!"
-	prompt
-
 ClampedByText:
 	text "<TARGET>"
 	line "was CLAMPED by"

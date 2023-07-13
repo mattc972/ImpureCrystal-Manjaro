@@ -1520,7 +1520,7 @@ BattleTowerMons:
 
 	db TENTACRUEL
 	db KINGS_ROCK
-	db WRAP, TOXIC, SLUDGE_BOMB, BUBBLEBEAM
+	db BIND, TOXIC, SLUDGE_BOMB, BUBBLEBEAM
 	dw 0 ; OT ID
 	dt 27000 ; Exp
 	; Stat exp
@@ -2254,7 +2254,7 @@ BattleTowerMons:
 
 	db SHUCKLE
 	db LEFTOVERS
-	db SANDSTORM, REST, TOXIC, WRAP
+	db SANDSTORM, REST, TOXIC, BIND
 	dw 0 ; OT ID
 	dt 125000 ; Exp
 	; Stat exp
@@ -4814,7 +4814,7 @@ BattleTowerMons:
 
 	db SHUCKLE
 	db LEFTOVERS
-	db TOXIC, WRAP, PROTECT, ENCORE
+	db TOXIC, BIND, PROTECT, ENCORE
 	dw 0 ; OT ID
 	dt 729000 ; Exp
 	; Stat exp

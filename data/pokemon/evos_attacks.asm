@@ -822,8 +822,8 @@ PoliwrathEvosAttacks:
 	db 1, WATER_GUN
 	db 1, HYPNOSIS
 	db 1, DOUBLESLAP
-	db 1, SUBMISSION
-	db 35, SUBMISSION
+	db 1, STRENGTH
+	db 35, STRENGTH
 	db 51, MIND_READER
 	db 0 ; no more level-up moves
 
@@ -874,7 +874,7 @@ MachopEvosAttacks:
 	db 31, VITAL_THROW
 	db 37, CROSS_CHOP
 	db 43, SCARY_FACE
-	db 49, SUBMISSION
+	db 49, STRENGTH
 	db 0 ; no more level-up moves
 
 MachokeEvosAttacks:
@@ -890,7 +890,7 @@ MachokeEvosAttacks:
 	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
 	db 52, SCARY_FACE
-	db 61, SUBMISSION
+	db 61, STRENGTH
 	db 0 ; no more level-up moves
 
 MachampEvosAttacks:
@@ -905,7 +905,7 @@ MachampEvosAttacks:
 	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
 	db 52, SCARY_FACE
-	db 61, SUBMISSION
+	db 61, STRENGTH
 	db 0 ; no more level-up moves
 
 BellsproutEvosAttacks:
@@ -1734,7 +1734,7 @@ PinsirEvosAttacks:
 	db 19, SEISMIC_TOSS
 	db 25, HARDEN
 	db 31, GUILLOTINE
-	db 37, SUBMISSION
+	db 37, STRENGTH
 	db 43, SWORDS_DANCE
 	db 0 ; no more level-up moves
 

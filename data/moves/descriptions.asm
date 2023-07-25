@@ -233,7 +233,7 @@ MoveDescriptions::
 	dw SweetScentDescription
 	dw IronTailDescription
 	dw MetalClawDescription
-	dw VitalThrowDescription
+	dw VoltTackleDescription
 	dw MorningSunDescription
 	dw SynthesisDescription
 	dw MoonlightDescription
@@ -1194,9 +1194,9 @@ MetalClawDescription:
 	db   "An attack that may"
 	next "up user's ATTACK.@"
 
-VitalThrowDescription:
-	db   "A 2nd-strike move"
-	next "that never misses.@"
+VoltTackleDescription:
+	db   "A tackle that also"
+	next "hurts the user.@"
 
 MorningSunDescription:
 	db   "Restores HP"

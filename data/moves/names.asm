@@ -232,7 +232,7 @@ MoveNames::
 	li "Sweet Scent"
 	li "Iron Tail"
 	li "Metal Claw"
-	li "Vital Throw"
+	li "Volt Tackle"
 	li "Morning Sun"
 	li "Synthesis"
 	li "Moonlight"

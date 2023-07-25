@@ -234,7 +234,7 @@ BattleAnimations::
 	dw BattleAnim_SweetScent
 	dw BattleAnim_IronTail
 	dw BattleAnim_MetalClaw
-	dw BattleAnim_VitalThrow
+	dw BattleAnim_VoltTackle
 	dw BattleAnim_MorningSun
 	dw BattleAnim_Synthesis
 	dw BattleAnim_Moonlight
@@ -4222,26 +4222,28 @@ BattleAnim_MetalClaw:
 	anim_wait 32
 	anim_ret
 
-BattleAnim_VitalThrow:
+BattleAnim_VoltTackle:
 	anim_1gfx ANIM_GFX_HIT
+	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $14, $2, $0
+	anim_wait 32
 	anim_call BattleAnim_TargetObj_1Row
-	anim_bgeffect ANIM_BG_VITAL_THROW, $0, BG_EFFECT_USER, $0
-	anim_wait 16
-	anim_sound 0, 0, SFX_MENU
-	anim_obj ANIM_OBJ_HIT, 64, 96, $0
+	anim_bgeffect ANIM_BG_TACKLE, $0, BG_EFFECT_USER, $0
+	anim_wait 4
+	anim_sound 0, 1, SFX_HEADBUTT
+	anim_obj ANIM_OBJ_HIT_YFIX, 136, 56, $0
 	anim_wait 8
-	anim_sound 0, 0, SFX_MENU
-	anim_obj ANIM_OBJ_HIT, 56, 88, $0
-	anim_wait 8
-	anim_sound 0, 0, SFX_MENU
-	anim_obj ANIM_OBJ_HIT, 68, 104, $0
-	anim_wait 8
-	anim_incbgeffect ANIM_BG_VITAL_THROW
-	anim_wait 16
 	anim_call BattleAnim_ShowMon_0
-	anim_sound 0, 1, SFX_MEGA_PUNCH
-	anim_obj ANIM_OBJ_HIT_BIG, 132, 56, $0
+	anim_2gfx ANIM_GFX_LIGHTNING, ANIM_GFX_EXPLOSION
+	anim_bgp $1b
+	anim_obp0 $30
+	anim_sound 6, 2, SFX_ZAP_CANNON
+	anim_obj ANIM_OBJ_ZAP_CANNON, 64, 92, $2
+	anim_wait 40
+	anim_sound 0, 1, SFX_THUNDERSHOCK
+	anim_obj ANIM_OBJ_THUNDERBOLT_BALL, 136, 56, $2
 	anim_wait 16
+	anim_obj ANIM_OBJ_SPARKS_CIRCLE_BIG, 136, 56, $0
+	anim_wait 128
 	anim_ret
 
 BattleAnim_MorningSun:

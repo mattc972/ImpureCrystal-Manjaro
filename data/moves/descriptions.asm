@@ -5,7 +5,7 @@ MoveDescriptions::
 	dw KarateChopDescription
 	dw DoubleslapDescription
 	dw ArmThrustDescription
-	dw MegaPunchDescription
+	dw DrillRunDescription
 	dw PayDayDescription
 	dw FirePunchDescription
 	dw IcePunchDescription
@@ -282,9 +282,9 @@ ArmThrustDescription:
 	db   "Repeatedly thrusts"
 	next "arms 2-5 times.@"
 
-MegaPunchDescription:
-	db   "A powerful punch"
-	next "thrown very hard.@"
+DrillRunDescription:
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
 
 PayDayDescription:
 	db   "Throws coins. Gets"

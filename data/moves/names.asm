@@ -4,7 +4,7 @@ MoveNames::
 	li "Karate Chop"
 	li "Doubleslap"
 	li "Arm Thrust"
-	li "Mega Punch"
+	li "Drill Run"
 	li "Pay Day"
 	li "Fire Punch"
 	li "Ice Punch"

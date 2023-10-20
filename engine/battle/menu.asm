@@ -42,10 +42,10 @@ BattleMenuHeader:
 	dbw BANK(@), NULL
 
 .Text:
-	db "FIGHT@"
+	db "Fight@"
 	db "<PKMN>@"
-	db "PACK@"
-	db "RUN@"
+	db "Pack@"
+	db "Run@"
 
 SafariBattleMenuHeader:
 	db MENU_BACKUP_TILES ; flags

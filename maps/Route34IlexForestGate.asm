@@ -89,7 +89,7 @@ Route34IlexForestGateTeacherReturnsMovement:
 
 Route34IlexForestGateTeacherText:
 	text "Oh, honey. You're"
-	line "making a #DEX?"
+	line "making a #dex?"
 
 	para "It must be hard if"
 	line "#mon won't"

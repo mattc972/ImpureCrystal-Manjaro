@@ -1744,7 +1744,7 @@ NoRadioName:
 	ret
 
 OaksPKMNTalkName:     db "OAK's <PK><MN> Talk@"
-PokedexShowName:      db "#DEX Show@"
+PokedexShowName:      db "#dex Show@"
 PokemonMusicName:     db "#mon Music@"
 LuckyChannelName:     db "Lucky Channel@"
 UnownStationName:     db "?????@"

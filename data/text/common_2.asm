@@ -857,7 +857,7 @@ _BreedShowsInterestText::
 	prompt
 
 _EmptyMailboxText::
-	text "There's no MAIL"
+	text "There's no Mail"
 	line "here."
 	prompt
 
@@ -1532,10 +1532,10 @@ _OakText1::
 	para "Welcome to the"
 	line "world of #mon!"
 
-	para "My name is OAK."
+	para "My name is Oak."
 
 	para "People call me the"
-	line "#mon PROF."
+	line "#mon Professor."
 	prompt
 
 _OakText2::

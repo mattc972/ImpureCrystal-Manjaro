@@ -319,7 +319,7 @@ _AlreadySetUpText::
 	prompt
 
 _LookTownMapText::
-	text "It's the TOWN MAP."
+	text "It's the Town Map."
 	done
 
 _LookPikachuPosterText::

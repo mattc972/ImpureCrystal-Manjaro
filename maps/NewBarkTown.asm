@@ -187,7 +187,7 @@ NewBarkTown_RivalReturnsToTheShadowsMovement:
 	step_end
 
 Text_GearIsImpressive:
-	text "Wow, your #GEAR"
+	text "Wow, your #gear"
 	line "is impressive!"
 
 	para "Did your mom get"
@@ -241,17 +241,17 @@ Text_CallMomOnGear:
 Text_ElmDiscoveredNewMon:
 	text "Yo, <PLAYER>!"
 
-	para "I hear PROF.ELM"
-	line "discovered some"
-	cont "new #mon."
+	para "I hear Professor"
+	line "Elm discovered"
+	cont "some new #mon."
 	done
 
 NewBarkTownRivalText1:
 	text "<……>"
 
 	para "So this is the"
-	line "famous ELM #mon"
-	cont "LAB…"
+	line "famous Elm #mon"
+	cont "Lab…"
 	done
 
 NewBarkTownRivalText2:
@@ -260,11 +260,11 @@ NewBarkTownRivalText2:
 	done
 
 NewBarkTownSignText:
-	text "NEW BARK TOWN"
+	text "New Bark Town"
 
-	para "The Town Where the"
-	line "Winds of a New"
-	cont "Beginning Blow"
+	para "The town where the"
+	line "winds of a new"
+	cont "beginning blow."
 	done
 
 NewBarkTownPlayersHouseSignText:
@@ -272,11 +272,11 @@ NewBarkTownPlayersHouseSignText:
 	done
 
 NewBarkTownElmsLabSignText:
-	text "ELM #mon LAB"
+	text "Elm #mon Lab"
 	done
 
 NewBarkTownElmsHouseSignText:
-	text "ELM'S HOUSE"
+	text "Elm's House"
 	done
 
 NewBarkTown_MapEvents:

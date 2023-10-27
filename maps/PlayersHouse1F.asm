@@ -104,7 +104,7 @@ MeetMomTalkedScript:
 	sjump MeetMomScript
 
 PokegearName:
-	db "#GEAR@"
+	db "#gear@"
 
 PlayersHouse1FReceiveItemStd:
 	jumpstd ReceiveItemScript
@@ -211,28 +211,25 @@ MomWalksBackMovement:
 	step_end
 
 ElmsLookingForYouText:
-	text "Oh, <PLAYER>…! Our"
-	line "neighbor, PROF."
-
-	para "ELM, was looking"
-	line "for you."
+	text "Oh, <PLAYER>…!"
+	line "Professor Elm was"
+	cont "looking for you."
 
 	para "He said he wanted"
-	line "you to do some-"
-	cont "thing for him."
+	line "to ask a favor of"
+	cont "you."
 
 	para "Oh! I almost for-"
 	line "got! Your #mon"
-
-	para "GEAR is back from"
-	line "the repair shop."
+	cont "Gear is back from"
+	cont "the repair shop."
 
 	para "Here you go!"
 	done
 
 MomGivesPokegearText:
-	text "#mon GEAR, or"
-	line "just #GEAR."
+	text "#mon Gear, or"
+	line "just #gear."
 
 	para "It's essential if"
 	line "you want to be a"
@@ -259,24 +256,24 @@ ComeHomeForDSTText:
 
 	para "By the way, do you"
 	line "know how to use"
-	cont "the PHONE?"
+	cont "the Phone?"
 	done
 
 KnowTheInstructionsText:
 	text "Don't you just"
-	line "turn the #GEAR"
+	line "turn the #gear"
 
 	para "on and select the"
-	line "PHONE icon?"
+	line "Phone icon?"
 	done
 
 DontKnowTheInstructionsText:
 	text "I'll read the"
 	line "instructions."
 
-	para "Turn the #GEAR"
+	para "Turn the #gear"
 	line "on and select the"
-	cont "PHONE icon."
+	cont "Phone icon."
 	done
 
 InstructionsNextText:
@@ -344,8 +341,8 @@ NeighborText:
 	para "My daughter is"
 	line "adamant about"
 
-	para "becoming PROF."
-	line "ELM's assistant."
+	para "becoming Professor"
+	line "Elm's assistant."
 
 	para "She really loves"
 	line "#mon!"
@@ -354,8 +351,8 @@ NeighborText:
 PlayersHouse1FStoveText:
 	text "Mom's specialty!"
 
-	para "CINNABAR VOLCANO"
-	line "BURGER!"
+	para "Cinnabar Volcano"
+	line "Burger!"
 	done
 
 PlayersHouse1FSinkText:
@@ -368,8 +365,8 @@ PlayersHouse1FFridgeText:
 	text "Let's see what's"
 	line "in the fridge…"
 
-	para "FRESH WATER and"
-	line "tasty LEMONADE!"
+	para "Fresh Water and"
+	line "tasty Lemonade!"
 	done
 
 PlayersHouse1FTVText:

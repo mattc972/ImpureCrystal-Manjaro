@@ -127,10 +127,10 @@ PictureBookshelfText:
 
 MagazineBookshelfText:
 	text "#mon magazines…"
-	line "#mon PAL,"
+	line "#mon Pal,"
 
-	para "#mon HANDBOOK,"
-	line "#mon GRAPH…"
+	para "#mon Handbook,"
+	line "#mon Graph…"
 	done
 
 TeamRocketOathText:

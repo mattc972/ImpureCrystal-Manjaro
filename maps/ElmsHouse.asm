@@ -75,8 +75,8 @@ ElmsHousePCText:
 	para "…"
 
 	para "It's a part of"
-	line "PROF.ELM's re-"
-	cont "search papers."
+	line "Professor Elm's"
+	cont "research papers."
 	done
 
 ElmsHouse_MapEvents:

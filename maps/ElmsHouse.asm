@@ -24,7 +24,7 @@ ElmsWifeText:
 	line "husband's always"
 
 	para "so busy--I hope"
-	line "he's OK."
+	line "he's okay."
 
 	para "When he's caught"
 	line "up in his #mon"
@@ -46,7 +46,7 @@ ElmsSonText:
 ElmsHouseLabFoodText: ; unreferenced
 	text "There's some food"
 	line "here. It must be"
-	cont "for the LAB."
+	cont "for the Lab."
 	done
 
 ElmsHousePokemonFoodText: ; unreferenced

@@ -896,11 +896,11 @@ ReceivedStarterText:
 	done
 
 ElmDirectionsText1:
-	text "Mr. #mon lives a"
-	line "little bit beyond"
-
-	para "Cherrygrove, the"
-	line "next city over."
+	text "Mr. #mon lives"
+	line "a little bit beyo-"
+	cont "ond Cherrygrove,"
+	cont "the next city"
+	cont "over."
 
 	para "It's almost a"
 	line "direct route"
@@ -990,7 +990,7 @@ ElmAfterTheftText4:
 	done
 
 ElmAfterTheftText5:
-	text "ELM: What?!?"
+	text "Elm: What?!?"
 
 	para "Professor Oak"
 	line "gave you a "
@@ -1294,7 +1294,7 @@ ElmsLabOfficerText1:
 	done
 
 ElmsLabOfficerText2:
-	text "OK! So <RIVAL>"
+	text "Ok! So <RIVAL>"
 	line "was his name."
 
 	para "Thanks for helping"

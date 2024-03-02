@@ -288,15 +288,16 @@ InstructionsNextText:
 	done
 
 HurryUpElmIsWaitingText:
-	text "PROF.ELM is wait-"
-	line "ing for you."
+	text "Professor Elm is"
+	line "waiting for you."
 
 	para "Hurry up, baby!"
 	done
 
 SoWhatWasProfElmsErrandText:
-	text "So, what was PROF."
-	line "ELM's errand?"
+	text "So, what was"
+	line "Professor Elm's"
+	cont "errand?"
 
 	para "…"
 

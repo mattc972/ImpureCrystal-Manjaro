@@ -1171,6 +1171,7 @@ RandomEncounter::
 
 WildBattleScript:
 	randomwildmon
+	loadvar wBattleType, BATTLETYPE_SHINY
 	startbattle
 	reloadmapafterbattle
 	end

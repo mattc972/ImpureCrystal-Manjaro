@@ -2954,6 +2954,7 @@ SwinubEvosAttacks:
 	db 0 ; no more level-up moves
 
 PiloswineEvosAttacks:
+	db EVOLVE_LEVEL, 42, MAMOSWINE
 	db 0 ; no more evolutions
 	db 1, HORN_ATTACK
 	db 1, POWDER_SNOW
@@ -3353,4 +3354,16 @@ CelebiEvosAttacks:
 	db 30, FUTURE_SIGHT
 	db 40, BATON_PASS
 	db 50, PERISH_SONG
+	db 0 ; no more level-up moves
+
+MamoswineEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, EARTHQUAKE
+	db 1, ROCK_SLIDE
+	db 0 ; no more level-up moves
+
+YanmegaEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, X_SCISSOR
+	db 1, DRAGONBREATH
 	db 0 ; no more level-up moves

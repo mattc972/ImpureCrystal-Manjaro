@@ -10,7 +10,7 @@ MoveNames::
 	li "Ice Punch"
 	li "Thunderpunch"
 	li "Scratch"
-	li "Vicegrip"
+	li "Aura Sphere"
 	li "Guillotine"
 	li "Razor Wind"
 	li "Swords Dance"

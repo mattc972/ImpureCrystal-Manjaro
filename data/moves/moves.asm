@@ -24,7 +24,7 @@ Moves:
 	move ICE_PUNCH,    EFFECT_FREEZE_HIT,         75, ICE,           PHYSICAL, 100, 15,  10
 	move THUNDERPUNCH, EFFECT_PARALYZE_HIT,       75, ELECTRIC,      PHYSICAL, 100, 15,  10
 	move SCRATCH,      EFFECT_NORMAL_HIT,         40, NORMAL,        PHYSICAL, 100, 35,   0
-	move VICEGRIP,     EFFECT_NORMAL_HIT,         55, NORMAL,        PHYSICAL, 100, 30,   0 ;
+	move AURA_SPHERE,  EFFECT_ALWAYS_HIT,         90, FIGHTING,      SPECIAL,  100, 20,   0
 	move GUILLOTINE,   EFFECT_OHKO,                0, NORMAL,        PHYSICAL,  30,  5,   0 ;
 	move RAZOR_WIND,   EFFECT_RAZOR_WIND,         80, NORMAL,        SPECIAL,   75, 10,   0 ;
 	move SWORDS_DANCE, EFFECT_ATTACK_UP_2,         0, NORMAL,        STATUS,   100, 30,   0

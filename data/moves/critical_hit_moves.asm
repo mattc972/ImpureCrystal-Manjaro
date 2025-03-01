@@ -8,4 +8,5 @@ CriticalHitMoves:
 	db AEROBLAST
 	db CROSS_CHOP
 	db DRILL_RUN
+	db DRAGON_PULSE
 	db -1

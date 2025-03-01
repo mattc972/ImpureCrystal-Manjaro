@@ -12,7 +12,7 @@ MoveDescriptions::
 	dw ThunderpunchDescription
 	dw ScratchDescription
 	dw AuraSphereDescription
-	dw GuillotineDescription
+	dw DragonPulseDescription
 	dw RazorWindDescription
 	dw SwordsDanceDescription
 	dw CutDescription
@@ -310,9 +310,9 @@ AuraSphereDescription:
 	db   "An attack that"
 	next "never misses.@"
 
-GuillotineDescription:
-	db   "A one-hit KO,"
-	next "pincer attack.@"
+DragonPulseDescription:
+	db   "Has a high crit-"
+	next "cal hit ratio.@"
 
 RazorWindDescription:
 	db   "1st turn: Prepare"

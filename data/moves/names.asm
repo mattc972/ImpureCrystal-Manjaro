@@ -11,7 +11,7 @@ MoveNames::
 	li "Thunderpunch"
 	li "Scratch"
 	li "Aura Sphere"
-	li "Guillotine"
+	li "Dragon Pulse"
 	li "Razor Wind"
 	li "Swords Dance"
 	li "Cut"

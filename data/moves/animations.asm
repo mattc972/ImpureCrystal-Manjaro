@@ -13,7 +13,7 @@ BattleAnimations::
 	dw BattleAnim_Thunderpunch
 	dw BattleAnim_Scratch
 	dw BattleAnim_AuraSphere
-	dw BattleAnim_Guillotine
+	dw BattleAnim_DragonPulse
 	dw BattleAnim_RazorWind
 	dw BattleAnim_SwordsDance
 	dw BattleAnim_Cut
@@ -2525,19 +2525,31 @@ BattleAnim_DrillPeck:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Guillotine:
-	anim_1gfx ANIM_GFX_CUT
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $10
-	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $40, $2, $0
-	anim_sound 0, 1, SFX_VICEGRIP
-	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 156, 44, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 152, 40, $0
-	anim_obj ANIM_OBJ_CUT_DOWN_LEFT, 148, 36, $0
-	anim_obj ANIM_OBJ_CUT_UP_RIGHT, 124, 76, $0
-	anim_obj ANIM_OBJ_CUT_UP_RIGHT, 120, 72, $0
-	anim_obj ANIM_OBJ_CUT_UP_RIGHT, 116, 68, $0
-	anim_obj ANIM_OBJ_CUT_UP_RIGHT, 120, 72, $0
-	anim_wait 32
+BattleAnim_DragonPulse:
+	anim_1gfx ANIM_GFX_HIT
+        anim_call BattleAnim_TargetObj_1Row
+        anim_bgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING, $0, BG_EFFECT_USER, $20
+        anim_sound 0, 0, SFX_OUTRAGE
+	anim_wait 72
+        anim_incbgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING
+        anim_call BattleAnim_ShowMon_0
+	anim_bgp $1b
+	anim_2gfx ANIM_GFX_BEAM, ANIM_GFX_AEROBLAST
+        anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $50, $4, $10
+        anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+        anim_sound 0, 0, SFX_AEROBLAST
+        anim_obj ANIM_OBJ_AEROBLAST, 72, 88, $0
+        anim_wait 32
+        anim_sound 0, 0, SFX_HYPER_BEAM
+        anim_obj ANIM_OBJ_BEAM, 80, 84, $0
+        anim_wait 2
+        anim_sound 0, 1, SFX_HYPER_BEAM
+        anim_obj ANIM_OBJ_BEAM, 96, 76, $0
+        anim_wait 2
+        anim_sound 0, 1, SFX_HYPER_BEAM
+        anim_obj ANIM_OBJ_BEAM, 112, 68, $0
+        anim_obj ANIM_OBJ_BEAM_TIP, 126, 62, $0
+        anim_wait 48
 	anim_ret
 
 BattleAnim_Flash:

@@ -18,7 +18,7 @@ _ObtainedFruitText::
 	done
 
 _FruitPackIsFullText::
-	text "But the PACK is"
+	text "But the Pack is"
 	line "full…"
 	done
 
@@ -28,7 +28,7 @@ _NothingHereText::
 	done
 
 _WhichApricornText::
-	text "Which APRICORN"
+	text "Which Apricorn"
 	line "should I use?"
 	done
 
@@ -121,12 +121,12 @@ _PasscodesNotSameText::
 	done
 
 _PasscodeSetText::
-	text "Your PASSCODE has"
+	text "Your Passcode has"
 	line "been set."
 
 	para "Enter this number"
 	line "next time to open"
-	cont "the CARD FOLDER."
+	cont "the Card Folder."
 
 	para ""
 	done
@@ -138,19 +138,19 @@ _FourZerosInvalidText::
 	done
 
 _EnterPasscodeText::
-	text "Enter the CARD"
-	next "FOLDER PASSCODE."
+	text "Enter the Card"
+	next "Folder Passcode."
 	done
 
 _IncorrectPasscodeText::
 	text "Incorrect"
-	line "PASSCODE!"
+	line "Passcode!"
 
 	para ""
 	done
 
 _CardFolderOpenText::
-	text "CARD FOLDER open.@"
+	text "Card Folder open.@"
 	text_end
 
 _OakTimeWokeUpText::
@@ -254,7 +254,7 @@ _ThePasswordIsText:: ; unreferenced
 	done
 
 _IsThisOKText:: ; unreferenced
-	text "Is this OK?"
+	text "Is this Ok?"
 	done
 
 _EnterTheIDNoText:: ; unreferenced
@@ -324,17 +324,17 @@ _LookTownMapText::
 
 _LookPikachuPosterText::
 	text "It's a poster of a"
-	line "cute PIKACHU."
+	line "cute Pikachu."
 	done
 
 _LookClefairyPosterText::
 	text "It's a poster of a"
-	line "cute CLEFAIRY."
+	line "cute Clefairy."
 	done
 
 _LookJigglypuffPosterText::
 	text "It's a poster of a"
-	line "cute JIGGLYPUFF."
+	line "cute Jigglypuff."
 	done
 
 _LookAdorableDecoText::
@@ -503,22 +503,22 @@ _MobileTradeCameBackText::
 
 _OPT_IntroText1::
 	text_start
-	line "MARY: PROF.OAK'S"
+	line "Mary: Prof.Oak's"
 	done
 
 _OPT_IntroText2::
 	text_start
-	line "#mon TALK!"
+	line "#mon Talk!"
 	done
 
 _OPT_IntroText3::
 	text_start
-	line "With me, MARY!"
+	line "With me, Mary!"
 	done
 
 _OPT_OakText1::
 	text_start
-	line "OAK: @"
+	line "Oak: @"
 	text_ram wMonOrItemNameBuffer
 	text_end
 
@@ -538,7 +538,7 @@ _OPT_OakText3::
 
 _OPT_MaryText1::
 	text_start
-	line "MARY: @"
+	line "Mary: @"
 	text_ram wStringBuffer1
 	text "'s"
 	done
@@ -719,27 +719,27 @@ _PokedexShowText::
 
 _BenIntroText1::
 	text_start
-	line "BEN: #mon MUSIC"
+	line "Ben: #mon Music"
 	done
 
 _BenIntroText2::
 	text_start
-	line "CHANNEL!"
+	line "Channel!"
 	done
 
 _BenIntroText3::
 	text_start
-	line "It's me, DJ BEN!"
+	line "It's me, DJ Ben!"
 	done
 
 _FernIntroText1::
 	text_start
-	line "FERN: #MUSIC!"
+	line "Fern: #Music!"
 	done
 
 _FernIntroText2::
 	text_start
-	line "With DJ FERN!"
+	line "With DJ Fern!"
 	done
 
 _BenFernText1::
@@ -773,7 +773,7 @@ _BenFernText3B::
 
 _LC_Text1::
 	text_start
-	line "REED: Yeehaw! How"
+	line "Reed: Yeehaw! How"
 	done
 
 _LC_Text2::
@@ -798,7 +798,7 @@ _LC_Text5::
 
 _LC_Text6::
 	text_start
-	line "LUCKY NUMBER SHOW!"
+	line "Lucky Number Show!"
 	done
 
 _LC_Text7::
@@ -826,7 +826,7 @@ _LC_Text10::
 
 _LC_Text11::
 	text_start
-	line "the RADIO TOWER!"
+	line "the Radio Tower!"
 	done
 
 _LC_DragText1::
@@ -843,7 +843,7 @@ _LC_DragText2::
 
 _PnP_Text1::
 	text_start
-	line "PLACES AND PEOPLE!"
+	line "Places and People!"
 	done
 
 _PnP_Text2::
@@ -853,7 +853,7 @@ _PnP_Text2::
 
 _PnP_Text3::
 	text_start
-	line "me, DJ LILY!"
+	line "me, DJ Lily!"
 	done
 
 _PnP_Text4::
@@ -903,7 +903,7 @@ _PnP_PickyText::
 
 _PnP_SortOfOKText::
 	text_start
-	line "is sort of OK."
+	line "is sort of Ok."
 	done
 
 _PnP_SoSoText::
@@ -961,7 +961,7 @@ _RocketRadioText1::
 
 _RocketRadioText2::
 	text_start
-	line "TEAM ROCKET!"
+	line "Team Rocket!"
 	done
 
 _RocketRadioText3::
@@ -986,7 +986,7 @@ _RocketRadioText6::
 
 _RocketRadioText7::
 	text_start
-	line "GIOVANNI! @"
+	line "Giovanni! @"
 	text_pause
 	text "Can you"
 	done
@@ -1014,7 +1014,7 @@ _RocketRadioText10::
 
 _BuenaRadioText1::
 	text_start
-	line "BUENA: BUENA here!"
+	line "Buena: Buena here!"
 	done
 
 _BuenaRadioText2::
@@ -1041,17 +1041,17 @@ _BuenaRadioText5::
 
 _BuenaRadioText6::
 	text_start
-	line "I'm in GOLDENROD's"
+	line "I'm in Goldenrod's"
 	done
 
 _BuenaRadioText7::
 	text_start
-	line "RADIO TOWER!"
+	line "Radio Tower!"
 	done
 
 _BuenaRadioMidnightText1::
 	text_start
-	line "BUENA: Oh my…"
+	line "Buena: Oh my…"
 	done
 
 _BuenaRadioMidnightText2::
@@ -1086,7 +1086,7 @@ _BuenaRadioMidnightText7::
 
 _BuenaRadioMidnightText8::
 	text_start
-	line "you by DJ BUENA!"
+	line "you by DJ Buena!"
 	done
 
 _BuenaRadioMidnightText9::
@@ -1127,7 +1127,7 @@ _ThatCantBeUsedRightNowText:: ; unreferenced
 
 _ThatItemCantBePutInThePackText:: ; unreferenced
 	text "That item can't be"
-	line "put in the PACK."
+	line "put in the Pack."
 	done
 
 _TheItemWasPutInThePackText:: ; unreferenced
@@ -1135,7 +1135,7 @@ _TheItemWasPutInThePackText:: ; unreferenced
 	text_ram wStringBuffer1
 	text_start
 	line "was put in the"
-	cont "PACK."
+	cont "Pack."
 	done
 
 _RemainingTimeText:: ; unreferenced
@@ -1165,7 +1165,7 @@ _WillYouPlayWithMonText:: ; unreferenced
 
 _YouNeedTwoMonForBreedingText:: ; unreferenced
 	text "You need two #-"
-	line "MON for breeding."
+	line "Mon for breeding."
 	prompt
 
 _BreedingIsNotPossibleText:: ; unreferenced
@@ -1182,7 +1182,7 @@ _CompatibilityShouldTheyBreedText:: ; unreferenced
 	done
 
 _ThereIsNoEggText:: ; unreferenced
-	text "There is no EGG."
+	text "There is no Egg."
 	line ""
 	prompt
 
@@ -1220,26 +1220,26 @@ _DoesntConcernABoyText:: ; unreferenced
 	done
 
 _TheBoxIsFullText:: ; unreferenced
-	text "The BOX is full!"
+	text "The Box is full!"
 	done
 
 ; Mobile Adapter
 
 _NewCardArrivedText::
-	text "A new CARD arrived"
+	text "A new Card arrived"
 	line "from @"
 	text_ram wStringBuffer2
 	text "."
 	done
 
 _PutCardInCardFolderText::
-	text "Put this CARD in"
-	line "the CARD FOLDER?"
+	text "Put this Card in"
+	line "the Card Folder?"
 	done
 
 _CardWasListedText::
 	text_ram wStringBuffer2
-	text "'s CARD was"
+	text "'s Card was"
 	line "listed as no.@"
 	text_decimal wStringBuffer1, 1, 2
 	text "."
@@ -1285,7 +1285,7 @@ _TradingMonForOTMonText::
 
 _ObtainedTheVoltorbBadgeText:: ; unreferenced
 	text "Obtained the"
-	line "VOLTORBBADGE!"
+	line "VoltorbBadge!"
 	done
 
 _AskFloorElevatorText::
@@ -1293,18 +1293,18 @@ _AskFloorElevatorText::
 	done
 
 _BugCatchingContestTimeUpText::
-	text "ANNOUNCER: BEEEP!"
+	text "Announcer: Beeep!"
 
 	para "Time's up!"
 	done
 
 _BugCatchingContestIsOverText::
-	text "ANNOUNCER: The"
+	text "Announcer: The"
 	line "Contest is over!"
 	done
 
 _RepelWoreOffText::
-	text "REPEL's effect"
+	text "Repel's effect"
 	line "wore off."
 	done
 
@@ -1331,12 +1331,12 @@ _JustSawSomeRareMonText::
 
 	para "I'll call you if I"
 	line "see another rare"
-	cont "#mon, OK?"
+	cont "#mon, Ok?"
 	prompt
 
 _SavingRecordText::
-	text "SAVING RECORD…"
-	line "DON'T TURN OFF!"
+	text "Saving Record…"
+	line "Don't turn off!"
 	done
 
 _ReceiveItemText::
@@ -1357,11 +1357,11 @@ _NoCoinsText::
 
 _NoCoinCaseText::
 	text "You don't have a"
-	line "COIN CASE."
+	line "Coin Case."
 	prompt
 
 _NPCTradeCableText::
-	text "OK, connect the"
+	text "Ok, connect the"
 	line "Game Link Cable."
 	prompt
 
@@ -1546,7 +1546,7 @@ _MomLeavingText1::
 	para "So, you're leaving"
 	line "on an adventure…"
 
-	para "OK!"
+	para "Ok!"
 	line "I'll help too."
 
 	para "But what can I do"
@@ -1563,7 +1563,7 @@ _MomLeavingText1::
 	done
 
 _MomLeavingText2::
-	text "OK, I'll take care"
+	text "Ok, I'll take care"
 	line "of your money."
 
 	para "<……><……><……>"
@@ -1632,7 +1632,7 @@ _MomNotEnoughRoomInBankText::
 	prompt
 
 _MomStartSavingMoneyText::
-	text "OK, I'll save your"
+	text "Ok, I'll save your"
 	line "money. Trust me!"
 
 	para "<PLAYER>, stick"
@@ -1659,22 +1659,22 @@ _DaycareDummyText::
 	done
 
 _DayCareManIntroText::
-	text "I'm the DAY-CARE"
-	line "MAN. Want me to"
+	text "I'm the Day-Care"
+	line "Man. Want me to"
 	cont "raise a #mon?"
 	done
 
 _DayCareManIntroEggText::
-	text "I'm the DAY-CARE"
-	line "MAN. Do you know"
-	cont "about EGGS?"
+	text "I'm the Day-Care"
+	line "Man. Do you know"
+	cont "about Eggs?"
 
 	para "I was raising"
 	line "#mon with my"
 	cont "wife, you see."
 
 	para "We were shocked to"
-	line "find an EGG!"
+	line "find an Egg!"
 
 	para "How incredible is"
 	line "that?"
@@ -1684,24 +1684,24 @@ _DayCareManIntroEggText::
 	done
 
 _DayCareLadyIntroText::
-	text "I'm the DAY-CARE"
-	line "LADY."
+	text "I'm the Day-Care"
+	line "Lady."
 
 	para "Should I raise a"
 	line "#mon for you?"
 	done
 
 _DayCareLadyIntroEggText::
-	text "I'm the DAY-CARE"
-	line "LADY. Do you know"
-	cont "about EGGS?"
+	text "I'm the Day-Care"
+	line "Lady. Do you know"
+	cont "about Eggs?"
 
 	para "My husband and I"
 	line "were raising some"
 	cont "#mon, you see."
 
 	para "We were shocked to"
-	line "find an EGG!"
+	line "find an Egg!"
 
 	para "How incredible"
 	line "could that be?"
@@ -1722,11 +1722,11 @@ _OnlyOneMonText::
 
 _CantAcceptEggText::
 	text "Sorry, but I can't"
-	line "accept an EGG."
+	line "accept an Egg."
 	prompt
 
 _RemoveMailText::
-	text "Remove MAIL before"
+	text "Remove Mail before"
 	line "you come see me."
 	prompt
 
@@ -1737,7 +1737,7 @@ _LastHealthyMonText::
 	prompt
 
 _IllRaiseYourMonText::
-	text "OK. I'll raise"
+	text "Ok. I'll raise"
 	line "your @"
 	text_ram wStringBuffer1
 	text "."
@@ -1831,7 +1831,7 @@ _FoundAnEggText::
 	line "we surprised!"
 
 	para "Your #mon had"
-	line "an EGG!"
+	line "an Egg!"
 
 	para "We don't know how"
 	line "it got there, but"
@@ -1842,7 +1842,7 @@ _FoundAnEggText::
 
 _ReceivedEggText::
 	text "<PLAYER> received"
-	line "the EGG!"
+	line "the Egg!"
 	done
 
 _TakeGoodCareOfEggText::
@@ -1874,5 +1874,5 @@ _HoldStillText::
 
 _PrestoAllDoneText::
 	text "Presto! All done."
-	line "Come again, OK?"
+	line "Come again, Ok?"
 	done
